@@ -4,15 +4,18 @@
 #include "StoreInventory.h"
 #include "order.h"
 
-class registerController
+class registerController: public Observable
 {
 private:
   StoreInventory *database;
   order *cart;
   cashierView screen;
+  AnInt current;
+  AlertView alerts;
 public:
   registerController(StoreInventory *, order *);
   void processOrder();
+  void update();
 };
 
 #endif

@@ -35,3 +35,8 @@ void registerController::processOrder()
   cart->balance(option);
   screen.displayFinalReceipt(*cart);
 }
+
+void registerController::update(){
+  output.showNum(current.getNum());
+  alerts.checkAlerts(current.getNum());
+}

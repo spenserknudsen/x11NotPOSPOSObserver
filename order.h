@@ -18,6 +18,7 @@ class order : public IOrder
     double getTax();
     double getTotal();
     double balance(double);
+    void setInfo(item i);
 };
 
 #endif

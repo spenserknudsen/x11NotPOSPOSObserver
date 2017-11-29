@@ -4,7 +4,7 @@
 #include <vector>
 #include "item.h"
 
-class IOrder
+class IOrder: public Observable
 {
 public:
   //adds an item to the order

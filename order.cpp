@@ -41,3 +41,8 @@ double order::balance(double paid) {
   closed = true;
   return getTotal() - paid;
 }
+
+void order::setInfo(item i){
+  this->i = i;
+  notifyObservers();
+}
